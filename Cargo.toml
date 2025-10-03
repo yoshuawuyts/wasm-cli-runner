@@ -1,0 +1,23 @@
+[package]
+name = "wasm-cli-runner"
+version = "1.0.0"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/yoshuawuyts/wasm-cli-runner"
+documentation = "https://docs.rs/wasm-cli-runner"
+description = "Wasm CLI runner"
+readme = "README.md"
+edition = "2024"
+keywords = []
+categories = []
+authors = [
+    "Yoshua Wuyts <rust@yosh.is>"
+]
+
+[features]
+
+[dependencies]
+clap = { version = "4.5.48", features = ["derive"] }
+wasmtime = "37.0.1"
+wasmtime-wasi = "37.0.1"
+
+[dev-dependencies]
