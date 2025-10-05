@@ -21,13 +21,6 @@ fn path_is_reachable_on_disk() {
 }
 
 #[test]
-fn path_ends_with_wasm() {
+fn path_points_to_a_wasm_binary() {
     assert_cmd_snapshot!(cli().arg("tests/binaries/time.wasm"));
 }
-
-// #[test]
-// fn path_is_a_wasm_component() {
-//     let mut cmd = Command::cargo_bin("wasm-cli-runner").unwrap();
-//     let assert = cmd.write_stdin("noop.wasm").assert();
-//     assert.failure().stderr("Could not find file at location\n");
-// }
