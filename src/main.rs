@@ -4,6 +4,7 @@ use std::path::PathBuf;
 use clap::{Command, Parser};
 
 #[derive(clap::Parser)]
+#[command(version)]
 struct Arg {
     /// The path to a .wasm binary
     path: PathBuf,

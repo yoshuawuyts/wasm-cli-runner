@@ -1,0 +1,13 @@
+---
+source: tests/cli.rs
+info:
+  program: wasm-cli-runner
+  args:
+    - "--version"
+---
+success: true
+exit_code: 0
+----- stdout -----
+wasm-cli-runner 1.0.0
+
+----- stderr -----
