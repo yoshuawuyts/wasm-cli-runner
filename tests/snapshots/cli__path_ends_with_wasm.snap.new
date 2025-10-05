@@ -1,0 +1,20 @@
+---
+source: tests/cli.rs
+assertion_line: 25
+info:
+  program: wasm-cli-runner
+  args:
+    - tests/binaries/time.wasm
+---
+success: false
+exit_code: 2
+----- stdout -----
+
+----- stderr -----
+error: unrecognized subcommand 'tests/binaries/time.wasm'
+
+  tip: a similar subcommand exists: 'bar'
+
+Usage: wasm-cli-runner <COMMAND>
+
+For more information, try '--help'.

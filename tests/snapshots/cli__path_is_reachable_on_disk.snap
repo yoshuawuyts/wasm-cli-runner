@@ -1,0 +1,13 @@
+---
+source: tests/cli.rs
+info:
+  program: wasm-cli-runner
+  args:
+    - noop.wasm
+---
+success: false
+exit_code: 1
+----- stdout -----
+
+----- stderr -----
+Error: Os { code: 2, kind: NotFound, message: "No such file or directory" }

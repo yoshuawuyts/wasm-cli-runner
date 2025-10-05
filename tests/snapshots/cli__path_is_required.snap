@@ -1,0 +1,17 @@
+---
+source: tests/cli.rs
+info:
+  program: wasm-cli-runner
+  args: []
+---
+success: false
+exit_code: 2
+----- stdout -----
+
+----- stderr -----
+error: the following required arguments were not provided:
+  <PATH>
+
+Usage: wasm-cli-runner <PATH>
+
+For more information, try '--help'.
